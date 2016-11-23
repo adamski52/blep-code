@@ -119,16 +119,12 @@ export class TranslationService {
     }];
 
     private translateCharToBlep(char:string):string {
-        console.log("CHAR INPUT: ", char);
         char = char.toUpperCase();
         for(let l of this.MAP) {
-            console.log(l);
             if(l.plain === char) {
-                console.log("        ", l.blep);
                 return l.blep;
             }
         }
-        console.log("        x", char);
         return char;
     }
 
@@ -148,15 +144,15 @@ export class TranslationService {
             blep:Array<string> = [];
 
         for(let c of chars) {
-            blep.push(this.translateCharToBlep(c));
+            blep.push(this.translateCharToBlep(c) + " ");
         }
 
-        return blep.join(this.translateCharToBlep(" "));
+        return blep.join("");
     }
 
     //        . . / . . => ee ee
     public toPlain(blep:string):string {
-        var chars:Array<string> = blep.split(this.translateCharToBlep(" ")),
+        var chars:Array<string> = blep.split(" "),
             plain:Array<string> = [];
 
         for(let c of chars) {
