@@ -6,12 +6,9 @@ import {TranslationService} from "../services/translation";
 @Component({
     selector: 'blepper-translator',
     template: `
-        <div class="{{blepperService.getActiveBlepper().className}}">
-            <div class="blepper-wrapper">
-                <div class="blepper-image">
-                    <div class="blepper-tongue"></div>
-                </div>
-            </div>
+        <div class="blepper {{blepperService.getActiveBlepper().className}}">
+            <img class="blep-base" [src]="blepperService.getActiveBlepper().imageUrl">
+            <img class="blep-tongue" [src]="blepperService.getActiveBlepper().tongueUrl">
         </div>
     `
 })

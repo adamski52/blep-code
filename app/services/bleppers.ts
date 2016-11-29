@@ -7,16 +7,22 @@ export class BleppersService {
         value: 0,
         name: "Franklin",
         active: true,
+        imageUrl: "img/freon.png",
+        tongueUrl: "img/freon-tongue.png",
         className: "theme-franklin"
     }, {
         value: 1,
         name: "Aslan",
         active: false,
+        imageUrl: "img/aslan.png",
+        tongueUrl: "img/aslan-tongue.png",
         className: "theme-aslan"
     }, {
         value: 2,
         name: "Zelda",
         active: false,
+        imageUrl: "img/zelda.png",
+        tongueUrl: "img/zelda-tongue.png",
         className: "theme-zelda"
     }];
 
