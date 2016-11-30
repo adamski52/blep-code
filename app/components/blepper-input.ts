@@ -4,10 +4,11 @@ import {TranslationService} from "../services/translation";
 @Component({
     selector: 'blepper-input',
     template: `
-        <form>
-            <input [(ngModel)]="textInput" name="textInput">
-            <button (click)="toBlep()">To Blep</button>
-            <button (click)="toPlain()">To Plain</button>
+        <form class="blepper-form">
+            <input class="blepper-input" [(ngModel)]="textInput" name="textInput">
+            <button class="blepper-button" (click)="toBlep()">To Blep</button>
+            <button class="blepper-button" (click)="toPlain()">To Plain</button>
+            <button class="blepper-button" (click)="blep()">Blep</button>
         </form>
     `
 })
@@ -25,5 +26,9 @@ export class BlepperInput {
 
     private toPlain():void {
         this.textInput = this.translationService.toPlain(this.textInput);
+    }
+
+    private blep():void {
+        
     }
 }

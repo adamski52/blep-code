@@ -8,3 +8,5 @@ npm-debug.log*
 node_modules
 app/**/*.js
 app/**/*.js.map
+app/**/*.css
+app/**/*.css.map
