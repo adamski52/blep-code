@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky');
+
+h1 {
+  text-align: center;
+  font-size: 3.2em;
+  font-family: 'Fontdiner Swanky', cursive;
+}
+
+.blepper {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+  .blep-tongue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .blep-base {
+    width: 100%;
+  }
+
+
+  &.theme-franklin {
+    width: 300px;
+    height: 300px;
+
+    .blep-tongue {
+      width: 30px;
+      height: 16px;
+      top: 134px;
+      left: 92px;
+    }
+  }
+
+
+
+
+
+  &.theme-aslan {
+    width: 300px;
+    height: 361px;
+
+    .blep-tongue {
+      width: 23px;
+      height: 13px;
+      top: 135px;
+      left: 142px;
+    }
+  }
+
+
+  &.theme-zelda {
+    width: 276px;
+    height: 474px;
+
+    .blep-tongue {
+      width: 48px;
+      height: 31px;
+      top: 169px;
+      left: 29px;
+    }
+  }
+}
+
+.input-group {
+  margin: 20px 0;
+}

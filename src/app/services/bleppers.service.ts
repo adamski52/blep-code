@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {IBlepper} from "../interfaces/blepper";
+import {IBlepper} from "../interfaces/blepper.interface";
 
 @Injectable()
 export class BleppersService {
@@ -7,22 +7,22 @@ export class BleppersService {
         value: 0,
         name: "Franklin",
         active: true,
-        imageUrl: "img/freon.png",
-        tongueUrl: "img/freon-tongue.png",
+        imageUrl: "assets/img/freon.png",
+        tongueUrl: "assets/img/freon-tongue.png",
         className: "theme-franklin"
     }, {
         value: 1,
         name: "Aslan",
         active: false,
-        imageUrl: "img/aslan.png",
-        tongueUrl: "img/aslan-tongue.png",
+        imageUrl: "assets/img/aslan.png",
+        tongueUrl: "assets/img/aslan-tongue.png",
         className: "theme-aslan"
     }, {
         value: 2,
         name: "Zelda",
         active: false,
-        imageUrl: "img/zelda.png",
-        tongueUrl: "img/zelda-tongue.png",
+        imageUrl: "assets/img/zelda.png",
+        tongueUrl: "assets/img/zelda-tongue.png",
         className: "theme-zelda"
     }];
 

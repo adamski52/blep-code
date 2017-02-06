@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 
 @Injectable()
 export class TranslationService {
+    private _isVisible:boolean = true;
     private MAP:Array<{plain: string, blep: string}> = [{
         plain: "A",
         blep: ".-"
@@ -160,5 +161,13 @@ export class TranslationService {
         }
 
         return plain.join("");
+    }
+
+    public setVisible(isVisible:boolean):void {
+      this._isVisible = isVisible;
+    }
+
+    public getVisible():boolean {
+      return this._isVisible;
     }
 }
